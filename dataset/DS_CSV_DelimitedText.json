@@ -10,8 +10,8 @@
 		"typeProperties": {
 			"location": {
 				"type": "AzureBlobFSLocation",
-				"fileName": "olist_order_reviews_dataset.csv",
-				"folderPath": "excel",
+				"fileName": "olist_order_payments_dataset.csv",
+				"folderPath": "csv",
 				"fileSystem": "input"
 			},
 			"columnDelimiter": ",",

@@ -63,7 +63,7 @@
 							]
 						},
 						{
-							"value": "azure",
+							"value": "Azure",
 							"activities": [
 								{
 									"name": "EXE",
