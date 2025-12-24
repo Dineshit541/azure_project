@@ -1,9 +1,9 @@
 {
-	"name": "PL2_RAW_DATA",
+	"name": "PL3_CLOUDSDG_CSV_EXCEL",
 	"properties": {
 		"activities": [
 			{
-				"name": "LKUP_L2_TYPE",
+				"name": "LKUP_SRC_FILES",
 				"type": "Lookup",
 				"dependsOn": [],
 				"policy": {
@@ -18,24 +18,24 @@
 					"source": {
 						"type": "AzureSqlSource",
 						"sqlReaderQuery": {
-							"value": "SELECT DISTINCT L2_switch_type \nFROM dbo.vb_tbl_job a\nJOIN dbo.vb_tbl_trigger b ON a.trigger_id = b.trigger_id\nWHERE b.trigger_name = '@{pipeline().parameters.Trigger}'",
+							"value": "SELECT DISTINCT L3_switch_type \nFROM dbo.vb_tbl_job a\nJOIN dbo.vb_tbl_trigger b ON a.trigger_id = b.trigger_id\nWHERE b.trigger_name = '@{pipeline().parameters.Trigger}'",
 							"type": "Expression"
 						},
 						"queryTimeout": "02:00:00",
 						"partitionOption": "None"
 					},
 					"dataset": {
-						"referenceName": "DS_AZURE_SOURCE",
+						"referenceName": "DS_AZSQL",
 						"type": "DatasetReference"
 					}
 				}
 			},
 			{
-				"name": "SWITCH_SOURCE",
+				"name": "Switch_SRC_LOC_CSV_EXCEL",
 				"type": "Switch",
 				"dependsOn": [
 					{
-						"activity": "LKUP_L2_TYPE",
+						"activity": "LKUP_SRC_FILES",
 						"dependencyConditions": [
 							"Succeeded"
 						]
@@ -44,15 +44,29 @@
 				"userProperties": [],
 				"typeProperties": {
 					"on": {
-						"value": "@activity('LKUP_L2_TYPE').output.firstRow.L2_switch_type",
+						"value": "@activity('LKUP_SRC_FILES').output.firstRow.L3_switch_type",
 						"type": "Expression"
 					},
 					"cases": [
 						{
-							"value": "CloudStorage",
+							"value": "AWB",
 							"activities": [
 								{
-									"name": "EXEC_PL3_CLOUD",
+									"name": "Wait1",
+									"type": "Wait",
+									"dependsOn": [],
+									"userProperties": [],
+									"typeProperties": {
+										"waitTimeInSeconds": 1
+									}
+								}
+							]
+						},
+						{
+							"value": "azure",
+							"activities": [
+								{
+									"name": "EXE",
 									"type": "ExecutePipeline",
 									"dependsOn": [],
 									"policy": {
@@ -61,7 +75,7 @@
 									"userProperties": [],
 									"typeProperties": {
 										"pipeline": {
-											"referenceName": "PL3_CLOUDSDG_CSV_EXCEL",
+											"referenceName": "PL4_SWITCH_CSV_EXCEL",
 											"type": "PipelineReference"
 										},
 										"waitOnCompletion": true,
@@ -76,21 +90,7 @@
 							]
 						},
 						{
-							"value": "sql",
-							"activities": [
-								{
-									"name": "Wait1",
-									"type": "Wait",
-									"dependsOn": [],
-									"userProperties": [],
-									"typeProperties": {
-										"waitTimeInSeconds": 1
-									}
-								}
-							]
-						},
-						{
-							"value": "REST API",
+							"value": "gcp",
 							"activities": [
 								{
 									"name": "Wait2",
