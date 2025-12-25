@@ -2,7 +2,7 @@
 	"name": "EVENT_TRIGGER",
 	"properties": {
 		"annotations": [],
-		"runtimeState": "Stopped",
+		"runtimeState": "Started",
 		"pipelines": [
 			{
 				"pipelineReference": {
@@ -17,8 +17,8 @@
 			"ignoreEmptyBlobs": true,
 			"scope": "/subscriptions/220fa08b-db58-4507-a2db-d71c88f7b392/resourceGroups/rgendtoendproject/providers/Microsoft.Storage/storageAccounts/blobdevecom",
 			"events": [
-				"Microsoft.Storage.BlobDeleted",
-				"Microsoft.Storage.BlobCreated"
+				"Microsoft.Storage.BlobCreated",
+				"Microsoft.Storage.BlobDeleted"
 			]
 		}
 	}
