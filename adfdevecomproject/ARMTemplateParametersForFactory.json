@@ -1,0 +1,216 @@
+{
+	"$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+	"contentVersion": "1.0.0.0",
+	"parameters": {
+		"factoryName": {
+			"value": "adfdevecomproject"
+		},
+		"LS_AZSQL_password": {
+			"value": ""
+		},
+		"LS_AZURE_SOURCE_password": {
+			"value": ""
+		},
+		"LS_BLOB_connectionString": {
+			"value": ""
+		},
+		"LS_BLUK_accountKey": {
+			"value": ""
+		},
+		"LS_BLUK_SINK_accountKey": {
+			"value": ""
+		},
+		"LS_CSV_LAST_accountKey": {
+			"value": ""
+		},
+		"LS_CSV_SINK_accountKey": {
+			"value": ""
+		},
+		"LS_CSV_SOURCE_accountKey": {
+			"value": ""
+		},
+		"LS_EVENT_accountKey": {
+			"value": ""
+		},
+		"LS_EVENT2_accountKey": {
+			"value": ""
+		},
+		"LS_EXCEL_accountKey": {
+			"value": ""
+		},
+		"LS_EXCEL_SINK_accountKey": {
+			"value": ""
+		},
+		"LS_JSON_accountKey": {
+			"value": ""
+		},
+		"LS_JSON_SINK_accountKey": {
+			"value": ""
+		},
+		"LS_LAST_password": {
+			"value": ""
+		},
+		"LS_REST_SINK_accountKey": {
+			"value": ""
+		},
+		"LS_SFTP_accountKey": {
+			"value": ""
+		},
+		"LS_SFTP_SINK_accountKey": {
+			"value": ""
+		},
+		"LS_SNOW_SINK_accountKey": {
+			"value": ""
+		},
+		"LS_SQL_accountKey": {
+			"value": ""
+		},
+		"LS_SQL_CSV_password": {
+			"value": ""
+		},
+		"LS_SQL_DB_password": {
+			"value": ""
+		},
+		"LS_SQL_SINK_accountKey": {
+			"value": ""
+		},
+		"LS_SQL_soucr_password": {
+			"value": ""
+		},
+		"LS_Snowflake_password": {
+			"value": ""
+		},
+		"LS_SqlServer1_password": {
+			"value": ""
+		},
+		"LS_AZSQL_properties_typeProperties_server": {
+			"value": "sql-srvr-dev-ec.database.windows.net"
+		},
+		"LS_AZSQL_properties_typeProperties_database": {
+			"value": "sql-db-dev-ec"
+		},
+		"LS_AZSQL_properties_typeProperties_userName": {
+			"value": "access-login"
+		},
+		"LS_AZURE_SOURCE_properties_typeProperties_server": {
+			"value": "sql-srvr-dev-ec.database.windows.net"
+		},
+		"LS_AZURE_SOURCE_properties_typeProperties_database": {
+			"value": "sql-db-dev-ec"
+		},
+		"LS_AZURE_SOURCE_properties_typeProperties_userName": {
+			"value": "access-login"
+		},
+		"LS_BLUK_properties_typeProperties_url": {
+			"value": "https://adlsdevecomraw001.dfs.core.windows.net/"
+		},
+		"LS_BLUK_SINK_properties_typeProperties_url": {
+			"value": "https://adlsdevecomsource.dfs.core.windows.net/"
+		},
+		"LS_CSV_LAST_properties_typeProperties_url": {
+			"value": "https://adlsdevecomraw001.dfs.core.windows.net/"
+		},
+		"LS_CSV_SINK_properties_typeProperties_url": {
+			"value": "https://adlsdevecomsource.dfs.core.windows.net/"
+		},
+		"LS_CSV_SOURCE_properties_typeProperties_url": {
+			"value": "https://adlsdevecomraw001.dfs.core.windows.net/"
+		},
+		"LS_EVENT_properties_typeProperties_url": {
+			"value": "https://adlsdevecomraw001.dfs.core.windows.net/"
+		},
+		"LS_EVENT2_properties_typeProperties_url": {
+			"value": "https://adlsdevecomsource.dfs.core.windows.net/"
+		},
+		"LS_EXCEL_properties_typeProperties_url": {
+			"value": "https://adlsdevecomraw001.dfs.core.windows.net/"
+		},
+		"LS_EXCEL_SINK_properties_typeProperties_url": {
+			"value": "https://adlsdevecomsource.dfs.core.windows.net/"
+		},
+		"LS_JSON_properties_typeProperties_url": {
+			"value": "https://adlsdevecomraw001.dfs.core.windows.net/"
+		},
+		"LS_JSON_SINK_properties_typeProperties_url": {
+			"value": "https://adlsdevecomsource.dfs.core.windows.net/"
+		},
+		"LS_LAST_properties_typeProperties_server": {
+			"value": "sql-srvr-dev-ec.database.windows.net"
+		},
+		"LS_LAST_properties_typeProperties_database": {
+			"value": "sql-db-dev-ec"
+		},
+		"LS_LAST_properties_typeProperties_userName": {
+			"value": "access-login"
+		},
+		"LS_REST_SINK_properties_typeProperties_url": {
+			"value": "https://adlsdevecomsource.dfs.core.windows.net/"
+		},
+		"LS_RestService_properties_typeProperties_url": {
+			"value": "https://retoolapi.dev/QGsTVB/data"
+		},
+		"LS_SFTP_properties_typeProperties_url": {
+			"value": "https://adlsdevecomraw001.dfs.core.windows.net/"
+		},
+		"LS_SFTP_SINK_properties_typeProperties_url": {
+			"value": "https://adlsdevecomsource.dfs.core.windows.net/"
+		},
+		"LS_SNOWFLAKE_SINK_sasUri": {
+			"value": ""
+		},
+		"LS_SNOW_SINK_properties_typeProperties_url": {
+			"value": "https://adlsdevecomsource.dfs.core.windows.net/"
+		},
+		"LS_SQL_properties_typeProperties_url": {
+			"value": "https://adlsdevecomsource.dfs.core.windows.net/"
+		},
+		"LS_SQL_CSV_properties_typeProperties_server": {
+			"value": "sql-srvr-dev-ec.database.windows.net"
+		},
+		"LS_SQL_CSV_properties_typeProperties_database": {
+			"value": "sql-db-dev-ec"
+		},
+		"LS_SQL_CSV_properties_typeProperties_userName": {
+			"value": "access-login"
+		},
+		"LS_SQL_DB_properties_typeProperties_server": {
+			"value": "sql-srvr-dev-ec.database.windows.net"
+		},
+		"LS_SQL_DB_properties_typeProperties_database": {
+			"value": "sql-db-dev-ec"
+		},
+		"LS_SQL_DB_properties_typeProperties_userName": {
+			"value": "access-login"
+		},
+		"LS_SQL_SINK_properties_typeProperties_url": {
+			"value": "https://adlsdevecomsource.dfs.core.windows.net/"
+		},
+		"LS_SQL_soucr_properties_typeProperties_server": {
+			"value": "DESKTOP-FUOQ2OJ\\SQLEXPRESS02"
+		},
+		"LS_SQL_soucr_properties_typeProperties_database": {
+			"value": "Commerce"
+		},
+		"LS_SQL_soucr_properties_typeProperties_userName": {
+			"value": "DESKTOP-FUOQ2OJ\\Dinesh"
+		},
+		"LS_Snowflake_properties_typeProperties_database": {
+			"value": "DBAZURESNOW"
+		},
+		"LS_SqlServer1_properties_typeProperties_server": {
+			"value": "DESKTOP-FUOQ2OJ\\SQLEXPRESS02"
+		},
+		"LS_SqlServer1_properties_typeProperties_database": {
+			"value": "Commerce"
+		},
+		"LS_SqlServer1_properties_typeProperties_userName": {
+			"value": "DESKTOP-FUOQ2OJ\\Dinesh"
+		},
+		"EVENT_ADLS_TRIGGER_properties_typeProperties_scope": {
+			"value": "/subscriptions/220fa08b-db58-4507-a2db-d71c88f7b392/resourceGroups/rgendtoendproject/providers/Microsoft.Storage/storageAccounts/adlsdevecomraw001"
+		},
+		"EVENT_TRIGGER_properties_typeProperties_scope": {
+			"value": "/subscriptions/220fa08b-db58-4507-a2db-d71c88f7b392/resourceGroups/rgendtoendproject/providers/Microsoft.Storage/storageAccounts/blobdevecom"
+		}
+	}
+}
