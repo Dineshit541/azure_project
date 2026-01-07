@@ -1,0 +1,21 @@
+{
+	"name": "LS_SQL_soucr",
+	"type": "Microsoft.DataFactory/factories/linkedservices",
+	"properties": {
+		"annotations": [],
+		"type": "SqlServer",
+		"typeProperties": {
+			"server": "DESKTOP-FUOQ2OJ\\SQLEXPRESS02",
+			"database": "Commerce",
+			"encrypt": "optional",
+			"trustServerCertificate": false,
+			"authenticationType": "Windows",
+			"userName": "DESKTOP-FUOQ2OJ\\Dinesh",
+			"encryptedCredential": "eyJDcmVkZW50aWFsSWQiOiIxM2RlNzMwNy1mZjcxLTRiZDctYTdkOS03ZmE3NmU4YTRmYzAiLCJWZXJzaW9uIjoiMi4wIiwiQ2xhc3NUeXBlIjoiTWljcm9zb2Z0LkRhdGFQcm94eS5Db3JlLkludGVyU2VydmljZURhdGFDb250cmFjdC5DcmVkZW50aWFsU1UwNkNZMTQifQ=="
+		},
+		"connectVia": {
+			"referenceName": "selfhostedintegrationRuntime",
+			"type": "IntegrationRuntimeReference"
+		}
+	}
+}
